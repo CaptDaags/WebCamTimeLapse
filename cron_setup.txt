@@ -1,0 +1,8 @@
+You will need to add the following as a chron job.
+First crontab -e to edit the cron jobs.
+Add the following:
+*/10 * * * * /home/sirius/takepic.sh
+
+This will fire the script to take a pic every 10 mins
+
+--EOF--
