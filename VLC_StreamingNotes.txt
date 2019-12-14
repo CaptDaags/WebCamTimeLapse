@@ -1,0 +1,13 @@
+-- These Are Some Notes To Help With Getting The Streaming Going --
+
+Source: http://ubuntuforums.org/showthread.php?t=1544946
+
+sirius@jupiter2:~$ cvlc -vvv alsa://hw:0,0 --sout '#transcode{acodec=mp2,ab=32}:rtp{dst=192.168.1.5,port=1234,sdp=rtsp://192.168.1.5:8085/stream.sdp}'
+
+This is an interesting piece on an alternative to using VLC as the streaming server.
+
+Source:http://ubuntuforums.org/showthread.php?t=1544946 and see the section down the bottom
+on ffmpeg. This seems an easier and more reliable implementation as this monkey has also
+seen the problem of cVLC bailing after a random amount of time.
+
+--ENDS-- 
